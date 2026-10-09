@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Topic 17 – Social Signals & Social Media Optimization cho SEO</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--tx:#1b2033;--mut:#5d647a;--bd:#e2e5ef;--pri:#4f46e5;--pri2:#eef0ff;--ok:#0f9d6b;--bad:#d64545;--warn:#c98a00;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1220;--card:#181c30;--tx:#e8eaf5;--mut:#9aa1ba;--bd:#2a3050;--pri:#8b84ff;--pri2:#23274a;--ok:#34d399;--bad:#f87171;--warn:#fbbf24}}
+:root[data-theme="dark"]{--bg:#0f1220;--card:#181c30;--tx:#e8eaf5;--mut:#9aa1ba;--bd:#2a3050;--pri:#8b84ff;--pri2:#23274a;--ok:#34d399;--bad:#f87171;--warn:#fbbf24}
+html{scroll-padding-top:60px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--card);border-bottom:1px solid var(--bd);display:flex;gap:4px;overflow-x:auto;padding:8px 12px}
+nav a{white-space:nowrap;color:var(--mut);text-decoration:none;padding:6px 12px;border-radius:999px;font-size:14px}
+nav a:hover{background:var(--pri2);color:var(--pri)}
+header{padding:44px 20px 28px;text-align:center;max-width:900px;margin:auto}
+header .tag{display:inline-block;background:var(--pri2);color:var(--pri);padding:4px 12px;border-radius:999px;font-size:13px;font-weight:600}
+h1{font-size:clamp(26px,5vw,40px);line-height:1.2;margin:14px 0 8px}
+header p{color:var(--mut);max-width:680px;margin:0 auto}
+main{max-width:980px;margin:auto;padding:0 16px 60px}
+section{margin-top:40px}
+h2{font-size:24px;margin:0 0 6px}
+.sub{color:var(--mut);margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.ico{font-size:26px}
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center;margin-top:18px}
+.chain span{background:var(--pri2);color:var(--pri);padding:8px 12px;border-radius:10px;font-size:14px;font-weight:600}
+.chain i{color:var(--mut);font-style:normal}
+.tabs{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+button,.btn{font:inherit;cursor:pointer;border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:8px 14px;border-radius:10px}
+button.on{background:var(--pri);color:#fff;border-color:var(--pri)}
+button.pri{background:var(--pri);color:#fff;border-color:var(--pri)}
+.flow{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.step{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border-radius:10px;background:var(--pri2);animation:in .35s both}
+.step b{background:var(--pri);color:#fff;border-radius:50%;min-width:24px;height:24px;display:grid;place-items:center;font-size:13px}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
+.alert{border-left:4px solid var(--bad);background:color-mix(in srgb,var(--bad) 10%,var(--card));padding:12px 14px;border-radius:8px;margin-top:14px}
+.alert.good{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 10%,var(--card))}
+label{display:block;font-size:14px;color:var(--mut);margin:10px 0 2px}
+input[type=text],textarea{width:100%;font:inherit;padding:8px 10px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx)}
+input[type=range]{width:100%;accent-color:var(--pri)}
+.two{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.out{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}
+.out div{background:var(--pri2);border-radius:10px;padding:10px;text-align:center}
+.out strong{display:block;font-size:22px;color:var(--pri)}
+.out small{color:var(--mut)}
+.fr{margin-top:10px}.fl{display:flex;justify-content:space-between;gap:8px;font-size:14px}.fl b{color:var(--pri)}.ft{height:12px;border-radius:6px;background:var(--pri2);margin-top:4px;overflow:hidden}.fb{height:100%;background:var(--pri);border-radius:6px;transition:width .3s}
+.bar{height:22px;border-radius:6px;background:var(--pri);color:#fff;font-size:12px;padding:0 8px;display:flex;align-items:center;margin-top:6px;min-width:60px;transition:width .3s}
+.og{border:1px solid var(--bd);border-radius:10px;overflow:hidden;background:var(--bg);max-width:480px}
+.og .img{height:170px;background:linear-gradient(135deg,#6366f1,#ec4899);display:grid;place-items:center;font-size:54px}
+.og .t{padding:10px 12px}.og small{color:var(--mut);text-transform:uppercase;font-size:11px}
+.og h4{margin:2px 0;font-size:16px}.og p{margin:0;color:var(--mut);font-size:14px}
+pre{background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:10px;overflow-x:auto;font-size:12.5px;margin:10px 0 0}
+.tbl{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border-bottom:1px solid var(--bd);padding:8px;text-align:left;vertical-align:top}th{color:var(--mut)}
+.chk label{display:flex;gap:8px;align-items:flex-start;color:var(--tx);font-size:15px;margin:6px 0}
+details{border:1px solid var(--bd);border-radius:10px;background:var(--card);padding:10px 14px;margin-bottom:8px}
+summary{cursor:pointer;font-weight:600}
+footer{text-align:center;color:var(--mut);font-size:13px;padding:20px}
+</style>
+</head>
+<body>
+<nav>
+<a href="#khainiem">Khái niệm</a><a href="#vaitro">Vai trò</a><a href="#tacdong">Trực tiếp vs Gián tiếp</a><a href="#casestudy">Case study</a><a href="#chienluoc">Chiến lược</a><a href="#og">Demo Open Graph</a><a href="#kpi">KPI</a><a href="#sailam">Sai lầm</a><a href="#qa">Q&A</a>
+</nav>
+<header>
+<span class="tag">Topic 17 · Nhóm 17 · SEO</span>
+<h1>Social Signals & Social Media Optimization cho SEO</h1>
+<p>Trang demo tương tác: mạng xã hội không phải “nút bấm tăng hạng Google”, mà là kênh phân phối giúp nội dung được khám phá, tạo traffic, nhận biết thương hiệu và cơ hội được nhắc đến.</p>
+<div class="chain"><span>Social Media</span><i>→</i><span>Content Distribution</span><i>→</i><span>User Discovery</span><i>→</i><span>Traffic · Brand · Mention · Link</span><i>→</i><span>SEO Ecosystem</span></div>
+</header>
+<main>
+
+<section id="khainiem"><h2>1. Khái niệm nền tảng</h2><p class="sub">Bấm vào từng thẻ để xem định nghĩa.</p>
+<div class="grid" id="concepts"></div></section>
+
+<section id="vaitro"><h2>2. Vai trò của social sharing & social signals</h2><p class="sub">Bốn giá trị chính đối với khả năng hiển thị và lượng truy cập.</p>
+<div class="grid">
+<div class="card"><div class="ico">📣</div><h3>Reach</h3><p>Đưa nội dung đến nhiều người hơn, kể cả người chưa từng tìm kiếm.</p></div>
+<div class="card"><div class="ico">💬</div><h3>Engagement</h3><p>Cho biết nội dung nào thu hút: like, comment, share, save.</p></div>
+<div class="card"><div class="ico">🚦</div><h3>Traffic</h3><p>Người dùng từ social bấm vào website để đọc đầy đủ.</p></div>
+<div class="card"><div class="ico">🏷️</div><h3>Brand awareness</h3><p>Thương hiệu được nhớ, từ đó có thể được tìm kiếm trực tiếp.</p></div>
+</div></section>
+
+<section id="tacdong"><h2>3. Tác động trực tiếp vs gián tiếp</h2><p class="sub">Phần quan trọng nhất của đề tài. Chọn loại tác động để xem chuỗi ảnh hưởng.</p>
+<div class="card">
+<div class="tabs"><button class="on" data-t="d">Trực tiếp</button><button data-t="i">Gián tiếp</button><button data-t="m">Ngộ nhận phổ biến</button></div>
+<div class="flow" id="flow"></div><div id="note"></div></div></section>
+
+<section id="casestudy"><h2>4. Case study giả định: Website A (bán mô hình 3D)</h2><p class="sub">Số liệu bên dưới chỉ là giả định để minh họa, không phải số liệu của doanh nghiệp thực tế. Kéo thanh trượt để xem mô phỏng.</p>
+<div class="two"><div class="card">
+<label>Lượt tiếp cận (reach) mỗi tháng: <b id="vR"></b></label><input type="range" id="R" min="1000" max="200000" step="1000" value="30000">
+<label>Tỷ lệ tương tác (like/comment/share/save): <b id="vE"></b>%</label><input type="range" id="E" min="0.5" max="15" step="0.5" value="5">
+<label>Tỷ lệ chia sẻ trên reach: <b id="vS"></b>%</label><input type="range" id="S" min="0.1" max="5" step="0.1" value="0.8">
+<label>CTR từ social về website: <b id="vC"></b>%</label><input type="range" id="C" min="0.2" max="8" step="0.1" value="1.5">
+<label>Tỷ lệ chuyển đổi (lead/đơn hàng): <b id="vV"></b>%</label><input type="range" id="V" min="0.5" max="10" step="0.5" value="2">
+<label>Tỷ lệ chia sẻ dẫn đến mention/backlink tự nhiên: <b id="vL"></b>%</label><input type="range" id="L" min="0" max="5" step="0.1" value="1">
+</div><div class="card"><div id="funnel"></div><div class="out" id="out"></div>
+<div class="alert good"><b>Ý nghĩa của phễu trên, theo 4 bước:</b><br>
+1. Website A viết một bài gốc, ví dụ “Cách chọn mô hình 3D”.<br>
+2. Bài đó được chia nhỏ thành nhiều dạng để đăng lên mạng xã hội: bài Facebook, video ngắn, ảnh infographic tóm tắt.<br>
+3. Người xem thấy nội dung trên mạng xã hội, muốn đọc đầy đủ thì bấm về website. Đó là traffic từ social.<br>
+4. Người dùng để lại câu hỏi trong phần bình luận. Website A gom các câu hỏi này thành mục FAQ hoặc bài viết mới, nên nội dung tiếp tục được mở rộng.<br>
+<i>Kết luận: một nội dung gốc tạo ra nhiều điểm tiếp xúc, và phản hồi của người dùng giúp cải thiện nội dung SEO.</i></div></div></div></section>
+
+<section id="chienluoc"><h2>5. Chiến lược tích hợp website và mạng xã hội</h2><p class="sub">Website là tài sản nội dung trung tâm; social là kênh phân phối và tương tác.</p>
+<div class="card"><div class="tabs" id="stepTabs"></div><div id="stepBody"></div></div></section>
+
+<section id="og"><h2>6. Demo thực hành: thẻ Open Graph cho chia sẻ xã hội</h2><p class="sub">Thẻ Open Graph quyết định cách bài viết hiển thị khi được chia sẻ, giúp tăng CTR từ social. Sửa nội dung để xem trước.</p>
+<div class="two"><div class="card">
+<label>Tiêu đề bài viết</label><input type="text" id="ogT" value="Cách chọn mô hình 3D phù hợp cho người mới">
+<label>Mô tả (nên dưới 160 ký tự)</label><textarea id="ogD" rows="3">Hướng dẫn chọn file, định dạng và kích thước mô hình 3D để in hoặc dùng trong dự án.</textarea>
+<label>Tên miền</label><input type="text" id="ogH" value="banmohinh3d.vn">
+<label>Biểu tượng ảnh đại diện</label><input type="text" id="ogI" value="🧊">
+<div id="ogW"></div></div>
+<div class="card"><div class="og"><div class="img" id="pI"></div><div class="t"><small id="pH"></small><h4 id="pT"></h4><p id="pD"></p></div></div>
+<pre id="code"></pre><button class="pri" id="cp" style="margin-top:10px">Sao chép mã thẻ meta</button></div></div></section>
+
+<section id="kpi"><h2>7. KPI và đo lường</h2><p class="sub">Không nên đánh giá thành công chỉ bằng lượt thích. Hãy đánh dấu những KPI mà bạn dự định theo dõi.</p>
+<div class="card"><div class="tbl"><table><thead><tr><th>Tầng</th><th>Chỉ số</th><th>Công cụ</th></tr></thead><tbody>
+<tr><td>Nhận biết</td><td>Reach, impressions, video views</td><td>Meta Insights, TikTok Analytics</td></tr>
+<tr><td>Tương tác</td><td>Likes, comments, shares, saves</td><td>Insights của từng nền tảng</td></tr>
+<tr><td>Traffic</td><td>Clicks, sessions, social referral</td><td>Google Analytics</td></tr>
+<tr><td>SEO</td><td>Impressions, clicks, CTR, vị trí trung bình</td><td>Google Search Console</td></tr>
+<tr><td>Kinh doanh</td><td>Mentions, referring domains, leads, conversion rate</td><td>GA4, công cụ backlink</td></tr></tbody></table></div>
+<h3>Checklist KPI: dùng để làm gì?</h3>
+<p style="color:var(--mut);margin:4px 0 10px">Đây là công cụ tự kiểm tra kế hoạch đo lường, không phải số liệu thật. Hãy chọn các KPI bạn muốn theo dõi, trang sẽ cho biết kế hoạch đã đủ các tầng hay chưa. Mục đích là minh họa luận điểm của đề tài: chỉ đo lượt thích thì chưa đủ, vì lượt thích không cho biết nội dung có mang lại truy cập chất lượng, có cải thiện hiển thị trên Google hay có giúp mục tiêu kinh doanh hay không. Một kế hoạch tốt cần có cả KPI SEO (CTR, vị trí trung bình) và KPI kinh doanh (leads, conversion rate).</p><div class="chk" id="chk"></div><div class="alert good" id="chkR"></div></div></section>
+
+<section id="sailam"><h2>8. Bốn sai lầm cần tránh</h2><div class="grid" id="mist"></div></section>
+
+<section id="qa"><h2>9. Các câu hỏi có thể bạn sẽ thắc mắc</h2><div id="faq"></div></section>
+
+<section><h2>Nguồn tham khảo</h2><div class="card"><ul>
+<li>Google Search Central – SEO Starter Guide</li><li>Google Search Central – Guide to Google Search ranking systems</li><li>Google Search Central – Spam Policies</li><li>Google Search Central – Analyze social and video content performance</li></ul></div></section>
+</main>
+<footer>Demo cho Topic 17 · Nguyễn Quí Sơn · Nhóm 17</footer>
+
+<script>
+const $=s=>document.querySelector(s), esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=n=>Math.round(n).toLocaleString('vi-VN');
+
+// 1. Khái niệm
+const CON=[['🔍','SEO','Tối ưu website và nội dung để công cụ tìm kiếm hiểu, khám phá và hiển thị đúng người dùng.'],['📱','Social Media','Nền tảng cho người dùng tạo, chia sẻ và tương tác với nội dung.'],['🔁','Social Sharing','Hành động người dùng chia sẻ một nội dung lên mạng xã hội.'],['📶','Social Signals','Tín hiệu tương tác và mức lan truyền: chia sẻ, bình luận, lượt thích, thảo luận. Không phải “nút tăng hạng” Google.']];
+CON.forEach(([i,t,d])=>{const c=document.createElement('div');c.className='card';c.style.cursor='pointer';c.innerHTML=`<div class="ico">${i}</div><h3>${t}</h3><p style="display:none">${d}</p><small style="color:var(--mut)">Bấm để xem định nghĩa</small>`;c.onclick=()=>{const p=c.querySelector('p');p.style.display=p.style.display=='none'?'block':'none'};$('#concepts').append(c)});
+
+// 3. Trực tiếp / gián tiếp
+const FL={d:{s:['Bài đăng có nút kêu gọi hành động','Người dùng bấm vào liên kết','Social traffic vào website','Đo được bằng Analytics (nguồn: social)'],n:['alert good','Mạng xã hội tạo ra lượt truy cập trực tiếp, có thể quan sát và đo lường rõ ràng.']},
+i:{s:['Nội dung lan truyền, tăng nhận biết thương hiệu','Người dùng tìm kiếm thương hiệu nhiều hơn','Cộng đồng/website khác phát hiện và nhắc đến nội dung','Cơ hội backlink và mention tự nhiên','Bình luận, phản hồi cho biết nhu cầu để cải thiện nội dung SEO'],n:['alert good','Nhiều giá trị SEO của social đến qua các tác động gián tiếp, chuỗi dài và khó quy đổi thành một con số.']},
+m:{s:['Nhiều Like/Share','???','Google tự động xếp trang lên Top'],n:['alert','Không nên hiểu nhiều Like/Share = thứ hạng Google cao hơn. Không có cơ sở cho công thức đơn giản như vậy.']}};
+function flow(k){$('#flow').innerHTML=FL[k].s.map((t,i)=>`<div class="step" style="animation-delay:${i*.12}s"><b>${i+1}</b><span>${t}</span></div>`).join('');$('#note').innerHTML=`<div class="${FL[k].n[0]}">${FL[k].n[1]}</div>`}
+document.querySelectorAll('[data-t]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-t]').forEach(x=>x.classList.remove('on'));b.classList.add('on');flow(b.dataset.t)});flow('d');
+
+// 4. Mô phỏng
+const ids=['R','E','S','C','V','L'];
+function sim(){const v={};ids.forEach(k=>{v[k]=+$('#'+k).value;$('#v'+k).textContent=k=='R'?fmt(v[k]):v[k]});
+const eng=v.R*v.E/100,sh=v.R*v.S/100,cl=v.R*v.C/100,cv=cl*v.V/100,ml=sh*v.L/100;
+const rows=[['Reach',v.R],['Tương tác',eng],['Click về website',cl],['Lead/đơn hàng',cv]];
+$('#funnel').innerHTML='<h3>Phễu từ social đến website</h3>'+rows.map(([n,x])=>`<div class="fr"><div class="fl"><span>${n}</span><b>${fmt(x)}</b></div><div class="ft"><div class="fb" style="width:${Math.max(1.5,x/v.R*100)}%"></div></div></div>`).join('');
+$('#out').innerHTML=[['Lượt chia sẻ',sh],['Truy cập từ social',cl],['Lead/đơn hàng',cv],['Cơ hội mention/link',ml]].map(([n,x])=>`<div><strong>${x<10?x.toFixed(1):fmt(x)}</strong><small>${n}</small></div>`).join('')}
+ids.forEach(k=>$('#'+k).oninput=sim);sim();
+
+// 5. Chiến lược
+const ST=[['Xây nội dung gốc','Tạo nội dung hữu ích trên website, phù hợp nhu cầu tìm kiếm. Website là tài sản trung tâm.','Ví dụ: bài “Cách chọn mô hình 3D”.'],['Phân phối lại theo nền tảng','Không sao chép nguyên xi. Chuyển bài dài thành video ngắn, infographic, hỏi đáp, đoạn trích.','Facebook: bài đăng + ảnh; TikTok/Reels: video 30 giây.'],['Dẫn người dùng về website','Thêm liên kết rõ ràng, nút CTA, thẻ Open Graph để bài chia sẻ hiển thị đẹp.','Gắn UTM để đo nguồn truy cập.'],['Đo lường và tối ưu','Thu thập phản hồi, theo dõi KPI, biến câu hỏi trong bình luận thành FAQ hoặc bài mới.','Vòng lặp: đo → học → cải thiện nội dung.']];
+ST.forEach((s,i)=>{const b=document.createElement('button');b.textContent=`Bước ${i+1}`;b.onclick=()=>{[...$('#stepTabs').children].forEach(x=>x.classList.remove('on'));b.classList.add('on');$('#stepBody').innerHTML=`<h3>${s[0]}</h3><p>${s[1]}</p><div class="alert good">${s[2]}</div>`};if(!i)b.classList.add('on');$('#stepTabs').append(b)});
+$('#stepBody').innerHTML=`<h3>${ST[0][0]}</h3><p>${ST[0][1]}</p><div class="alert good">${ST[0][2]}</div>`;
+
+// 6. Open Graph
+function og(){const t=$('#ogT').value,d=$('#ogD').value,h=$('#ogH').value,i=$('#ogI').value;
+$('#pI').textContent=i;$('#pH').textContent=h;$('#pT').textContent=t;$('#pD').textContent=d;
+$('#code').textContent=`<meta property="og:type" content="article">\n<meta property="og:title" content="${esc(t)}">\n<meta property="og:description" content="${esc(d)}">\n<meta property="og:url" content="https://${esc(h)}/bai-viet">\n<meta property="og:image" content="https://${esc(h)}/anh-chia-se.jpg">\n<meta name="twitter:card" content="summary_large_image">`;
+const w=[];if(t.length>70)w.push('Tiêu đề dài hơn 70 ký tự, có thể bị cắt.');if(t.length<20)w.push('Tiêu đề hơi ngắn.');if(d.length>160)w.push('Mô tả dài hơn 160 ký tự.');
+$('#ogW').innerHTML=`<div class="alert ${w.length?'':'good'}">${w.length?w.join('<br>'):'Độ dài tiêu đề và mô tả phù hợp.'} (${t.length} / ${d.length} ký tự)</div>`}
+['ogT','ogD','ogH','ogI'].forEach(k=>$('#'+k).oninput=og);og();
+$('#cp').onclick=()=>{navigator.clipboard?.writeText($('#code').textContent).then(()=>{$('#cp').textContent='Đã sao chép';setTimeout(()=>$('#cp').textContent='Sao chép mã thẻ meta',1500)}).catch(()=>{})};
+
+// 7. KPI checklist
+const K=['Reach / impressions','Likes, comments, shares, saves','Clicks / sessions từ social','Impressions, CTR, vị trí trung bình (Search Console)','Mentions, referring domains','Leads, conversion rate'];
+$('#chk').innerHTML=K.map((k,i)=>`<label><input type="checkbox" data-k="${i}"> ${k}</label>`).join('');
+function kpi(){const n=document.querySelectorAll('[data-k]:checked').length,biz=$('[data-k="5"]').checked,seo=$('[data-k="3"]').checked;
+$('#chkR').textContent=n==0?'Chưa chọn KPI nào.':`Đã chọn ${n}/${K.length} KPI. `+(biz&&seo?'Có cả KPI SEO và KPI kinh doanh: hướng đo lường tốt.':'Nên bổ sung KPI SEO và KPI kinh doanh, không chỉ dừng ở lượt thích.')}
+document.querySelectorAll('[data-k]').forEach(c=>c.onchange=kpi);kpi();
+
+// 8. Sai lầm
+[['Đồng nhất Like/Share với thứ hạng Google','Social engagement không phải yếu tố xếp hạng trực tiếp.'],['Mua tương tác giả, spam link','Vi phạm chính sách spam, rủi ro cao.'],['Đăng y nguyên mọi nền tảng','Mỗi nền tảng cần định dạng và giọng điệu riêng.'],['Phụ thuộc một mạng xã hội','Nên xây hệ sinh thái: website + nhiều kênh.']].forEach(([t,d])=>{$('#mist').insertAdjacentHTML('beforeend',`<div class="card"><div class="ico" style="color:var(--bad)">✕</div><h3>${t}</h3><p>${d}</p></div>`)});
+
+// 9. Q&A
+[['Like và Share có phải yếu tố xếp hạng trực tiếp của Google không?','Không nên khẳng định như vậy. Social hỗ trợ SEO chủ yếu qua phân phối nội dung, traffic, nhận biết thương hiệu, discovery và cơ hội có mention/link.'],['Nếu social không trực tiếp tăng hạng, tại sao SEOer vẫn dùng?','Vì social giúp nội dung tiếp cận đúng đối tượng nhanh hơn, tạo traffic và phản hồi, tăng nhận biết thương hiệu và mở ra cơ hội được nhắc đến.'],['Backlink từ mạng xã hội có luôn giúp SEO không?','Không. Quan trọng là chất lượng, ngữ cảnh và cách liên kết được tạo ra. Không khuyến nghị mua hoặc spam link.'],['Website hay Social Media quan trọng hơn?','Không đặt thành lựa chọn một trong hai. Website chứa tài sản nội dung và chuyển đổi; social là kênh phân phối và tương tác.'],['KPI nào quan trọng nhất?','Tùy mục tiêu: SEO thì impressions, clicks, CTR, vị trí; kinh doanh thì thêm leads, conversion rate và chất lượng traffic.']].forEach(([q,a])=>{$('#faq').insertAdjacentHTML('beforeend',`<details><summary>${q}</summary><p>${a}</p></details>`)});
+</script>
+</body>
+</html>
